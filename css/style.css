@@ -1,0 +1,89 @@
+body{
+    background-color: #f7ecde;
+}
+h1 {
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    color: #352e28;
+    display: inline-block; 
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 25%;
+    left: 0;
+    bottom: 10px;
+    background-color: #fec260;
+    transition: height 350ms;
+    z-index: -1; 
+}
+
+h1:hover::before {
+    height: 50%;
+}
+h2{
+    color: #45a55b;
+    .color-icon{
+      color: #b3ac49;
+    }
+}
+::selection {
+    background:#fec260; 
+    color:black; 
+}
+h2::selection {
+    background:#fec260; 
+    color:#fec260; 
+}
+.btn-style{
+    background-color: #d1512d;
+    color: white;
+    border: none;
+    width: 170px;
+    height: 40px;
+    transition: background-color 350ms;
+
+}
+.btn-style:hover{
+    background-color: #893720;
+    
+}
+.btn:hover {
+    background-color: #893720 !important;
+}
+/* ---messageError---------------------------------------------------------- */
+.circles span {
+
+    width: 20px;
+    height: 20px;
+}
+.circles span:nth-child(1) {
+    background-color: #f15f5d;
+}
+.circles span:nth-child(2) {
+    background-color: #febe2e;
+}
+.circles span:nth-child(3) {
+    background-color: #4db748;
+}
+
+.messageError {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.messageError-content {
+    background: white;
+    padding: 20px;
+}
+
+
+

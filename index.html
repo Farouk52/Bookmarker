@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookmarker</title>
+  <link rel="icon" href="images/bookmark.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section>
+    <div class=" text-center mt-5">
+      <h1 class="py-2 position-relative text-center">Bookmarker</h1>
+    </div>
+    <h4 class="text-center my-5">
+      .......................................................................................................................................................................................................................
+    </h4>
+    <div class="text-center">
+      <h2> <i class="fa-solid fa-bookmark"></i> Bookmark your favorite site <i
+          class=" color-icon fa-solid fa-bookmark"></i></h2>
+    </div>
+    <!-- ------------------------------------------------------------------------------------------------- -->
+    <div class="container">
+      <div class="my-4">
+        <label class="my-2" for="SiteName"><i class="fa-solid fa-book-bookmark pe-2"></i> Site Name</label>
+        <input class="form-control rounded  " id="SiteName" type="text" placeholder="Bookmark Name">
+      </div>
+      <div>
+        <label class="my-2" for="SiteURL"><i class="fa-solid fa-book-bookmark pe-2"></i> Site URL</label>
+        <input class="form-control rounded" id="SiteURL" type="text" placeholder="Website URL">
+      </div>
+      <div class="text-center ">
+        <button onclick="addSite()" class="rounded my-4 btn-style ">Submit</button>
+      </div>
+      <h4 class="text-center my-3">
+        .......................................................................................................................................................................................................................
+      </h4>
+
+    </div>
+    <div>
+      <table class="table my-3 text-center table-light container  ">
+        <thead>
+          <th>Index</th>
+          <th>Website Name</th>
+          <th>Visit</th>
+          <th>Delete</th>
+        </thead>
+        <tbody id="tableBody">
+
+        </tbody>
+      </table>
+    </div>
+  </section>
+  <!-- ---------------------------------messageError------------------------------------------------- -->
+  <div id="messageError" class="messageError">
+    <div class="messageError-content">
+      <div class="w-100 d-flex justify-content-between align-items-center mb-4">
+        <div class="circles d-flex">
+          <span class="rounded-circle me-2"></span>
+          <span class="rounded-circle me-2"></span>
+          <span class="rounded-circle me-2"></span>
+        </div>
+        <button class="btn border-0" id="closeBtn">
+          <i class="fa-solid fa-xmark close fs-3"></i>
+        </button>
+      </div>
+      <h4 class="fs-3 mb-4">Site Name or Url is not valid, Please follow the <br> rules below :</h4>
+      <h5 class="fs-4 d-flex  align-items-center"><i class="fa-regular fa-circle-right p-2 Danger  "></i> Site name must
+        contain at least 3 characters</h5>
+      <h5 class="fs-4 d-flex  align-items-center"><i class="fa-regular fa-circle-right p-2 Danger  "></i> Site URL must
+        be a valid one</h5>
+    </div>
+  </div>
+
+  <script src="js/all.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
